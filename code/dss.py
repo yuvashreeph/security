@@ -98,3 +98,26 @@ except(ValueError, TypeError):
     print("Invalid")
     
 '''
+
+
+'''
+### Algorithm: RSA Digital Signature using SHA-256
+
+1. Start the program.
+2. Import the RSA, digital signature, and SHA-256 modules.
+3. Generate an RSA public key and private key.
+4. Read the message from the user.
+5. Calculate the SHA-256 hash of the message.
+6. Sign the hash using the sender's private key.
+7. Display the hash and digital signature.
+8. Verify the signature using the public key.
+9. If verification succeeds, display "Signature VALID"; otherwise, display "Signature INVALID".
+10. Read a modified message and verify its signature.
+11. Display whether the modified message's signature is valid or invalid.
+12. Generate RSA key pairs for Alice and Bob.
+13. Read Alice's email message and sign it using Alice's private key.
+14. Verify the email signature using Alice's public key.
+15. Modify the email and verify it again to demonstrate tampering detection.
+16. Display the experiment completion message.
+17. Stop the program.
+'''
