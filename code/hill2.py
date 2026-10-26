@@ -72,3 +72,22 @@ else:
     cipher = encrypt(text, key)
     print("Ciphertext:", cipher)
     print("Decrypted:", decrypt(cipher, inv))
+
+
+'''
+### Algorithm: Hill Cipher Encryption and Decryption
+
+1. Start the program.
+2. Define a function to calculate the inverse of the \\(2 \times 2\\) key matrix modulo 26.
+3. Read the key matrix from the user.
+4. Read the plaintext, convert it to uppercase, and remove spaces.
+5. If the plaintext length is odd, add the letter `X` at the end.
+6. Calculate the determinant of the key matrix and find its modular inverse.
+7. If the key matrix is not invertible, display an error message and stop.
+8. Divide the plaintext into pairs of letters.
+9. Convert each pair into numbers and multiply it by the key matrix modulo 26 to obtain the ciphertext.
+10. Display the encrypted ciphertext.
+11. Decrypt the ciphertext using the inverse key matrix modulo 26.
+12. Display the decrypted plaintext.
+13. Stop the program.
+'''
