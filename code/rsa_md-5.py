@@ -1,4 +1,3 @@
-
 import math
 import hashlib
 
@@ -90,6 +89,8 @@ if check_rsa(p, q, e):
     else:
         print("MD5 Verification: Message is modified")
 
+else:
+    print("Invalid RSA parameters")
 
 '''
 ## Algorithm: RSA Digital Signature and MD5 Message Integrity Verification
@@ -113,6 +114,3 @@ if check_rsa(p, q, e):
 17. If the RSA parameters are invalid, display an error message.
 18. Stop the program.
 '''
-
-else:
-    print("Invalid RSA parameters")
