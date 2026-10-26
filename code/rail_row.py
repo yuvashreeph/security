@@ -39,3 +39,21 @@ for c in range(cols):
         plain += matrix2[r][c]
 
 print("Decrypted:", plain.rstrip('X'))
+
+
+'''
+### Algorithm: Columnar Transposition Cipher Encryption and Decryption
+
+1. Start the program.
+2. Read the plaintext and number of columns from the user.
+3. Convert the plaintext to uppercase and remove spaces.
+4. Calculate the number of rows required to store the plaintext.
+5. Create a matrix and fill empty positions with `X`.
+6. Fill the matrix column by column using the plaintext.
+7. Read the matrix row by row to generate the ciphertext.
+8. Display the encrypted ciphertext.
+9. Create a new matrix and fill it row by row using the ciphertext.
+10. Read the new matrix column by column to recover the plaintext.
+11. Remove trailing `X` characters and display the decrypted text.
+12. Stop the program.
+'''
