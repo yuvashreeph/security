@@ -87,3 +87,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+'''
+### Algorithm: Rail Fence Cipher Encryption and Decryption
+
+1. Start the program.
+2. Read the plaintext and number of rails from the user.
+3. Check whether the number of rails is at least 2. If not, display an error message and stop.
+4. Create a fence with the specified number of rails.
+5. Arrange the plaintext characters in a zigzag pattern, moving downward and upward between the rails.
+6. Read the characters rail by rail to generate the ciphertext.
+7. Display the characters arranged in each rail and the encrypted text.
+8. Recreate the zigzag pattern for the ciphertext.
+9. Calculate the number of characters in each rail and fill the rails with the ciphertext characters.
+10. Read the characters in zigzag order to recover the original plaintext.
+11. Display the decrypted text.
+12. Stop the program.
+'''
