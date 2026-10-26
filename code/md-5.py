@@ -33,3 +33,21 @@ changed = sum(x != y for x, y in zip(b1, b2))
 print("Bits changed:", changed, "/ 128")
 
 
+'''
+### Algorithm: MD5 Hashing, Message Integrity and Avalanche Effect
+
+1. Start the program.
+2. Import the `hashlib` module.
+3. Read the text from the user and calculate its MD5 hash.
+4. Display the MD5 hash and its length.
+5. Read the previous MD5 hash and compare it with the newly calculated hash.
+6. If both hashes match, display "Message is not modified"; otherwise, display "Message is modified".
+7. Read two similar strings from the user.
+8. Calculate and display the MD5 hash of both strings.
+9. Convert both hexadecimal hashes into 128-bit binary strings.
+10. Compare the binary strings and count the number of different bits.
+11. Display the number of changed bits out of 128 to demonstrate the avalanche effect.
+12. Stop the program.
+'''
+
+
