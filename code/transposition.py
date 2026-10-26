@@ -82,3 +82,33 @@ print("Type A Decrypted:", dec_A(cipher_A, cols))
 cipher_B = enc_B(text, cols)
 print("Type B Ciphertext:", cipher_B)
 print("Type B Decrypted:", dec_B(cipher_B, cols))
+
+
+'''
+
+## Algorithm: Columnar Transposition Cipher (Type A and Type B)
+
+1. Start the program and import the `math` module.
+2. Read the plaintext and the number of columns from the user.
+3. Remove spaces from the plaintext and convert it to uppercase.
+4. Type A Encryption:
+   - Calculate the number of rows required.
+   - Create a grid filled with `X`.
+   - Fill the grid column-wise with the plaintext.
+   - Read the grid row-wise to generate the ciphertext.
+5. Type A Decryption:
+   - Arrange the ciphertext row-wise into a grid.
+   - Read the grid column-wise to recover the plaintext.
+   - Remove trailing `X` characters.
+6. Display the Type A ciphertext and decrypted message.
+7. Type B Encryption:
+   - Add `X` characters until the plaintext length is divisible by the number of columns.
+   - Fill the grid row-wise with the padded plaintext.
+   - Read the grid column-wise to generate the ciphertext.
+8. Type B Decryption:
+   - Create an empty grid with the required rows and columns.
+   - Fill the grid column-wise using the ciphertext.
+   - Read the grid row-wise to recover the plaintext.
+9. Display the Type B ciphertext and decrypted message.
+10. Stop the program.
+'''
