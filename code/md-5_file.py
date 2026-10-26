@@ -82,9 +82,7 @@ if os.path.isfile(path):
         print("File is MODIFIED")
 else:
     print("File not found")
-
 '''
-
 ### Algorithm: MD5 Hashing and File Integrity Verification
 
 1. Start the program.
@@ -104,5 +102,4 @@ else:
 15. Stop the program.
 
 Note: MD5 is suitable for this educational experiment, but SHA-256 is recommended for security-sensitive integrity verification.
-
 '''
