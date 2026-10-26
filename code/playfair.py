@@ -96,3 +96,26 @@ cipher = encrypt(text, matrix)
 
 print("Ciphertext:", cipher)
 print("Decrypted:", decrypt(cipher, matrix))
+
+
+'''
+### Algorithm: Playfair Cipher Encryption and Decryption
+
+1. Start the program.
+2. Read the key from the user.
+3. Convert the key to uppercase, replace `J` with `I`, and remove duplicate letters.
+4. Create a \\(5 \times 5\\) key matrix using the key and remaining alphabet letters.
+5. Read the plaintext, convert it to uppercase, replace `J` with `I`, and remove spaces and special characters.
+6. Divide the plaintext into pairs of letters. Insert `X` between repeated letters in a pair and add `X` if the final letter has no pair.
+7. Encrypt each pair using these rules:
+   - Same row: Replace each letter with the letter to its right.
+   - Same column: Replace each letter with the letter below it.
+   - Different row and column: Replace each letter with the letter in the same row and the other letter's column.
+8. Display the encrypted ciphertext.
+9. Decrypt the ciphertext using the reverse rules:
+   - Same row: Move one position to the left.
+   - Same column: Move one position upward.
+   - Different row and column: Apply the rectangle rule.
+10. Display the decrypted text.
+11. Stop the program.
+'''
