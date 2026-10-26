@@ -39,3 +39,22 @@ if keyA == keyB:
     print("SHA-256 Hash:", sha_hash)
 else:
     print("Shared Key Not Matched")
+
+
+'''
+### Algorithm: Diffie–Hellman Key Exchange with MD5 and SHA-256
+
+1. Start the program.
+2. Import the `hashlib` module.
+3. Initialize the public values \\(p\\) and \\(g\\), and the private keys of users A and B.
+4. Calculate the public key of A using \\(K_A = g^a \bmod p\\).
+5. Calculate the public key of B using \\(K_B = g^b \bmod p\\).
+6. Calculate the shared secret key for A using \\(K_A^{shared} = K_B^a \bmod p\\).
+7. Calculate the shared secret key for B using \\(K_B^{shared} = K_A^b \bmod p\\).
+8. Compare both shared keys. If they match, display a success message.
+9. Convert the shared key into a string.
+10. Calculate and display the MD5 hash of the shared key string.
+11. Calculate and display the SHA-256 hash of the shared key string.
+12. If the shared keys do not match, display an error message.
+13. Stop the program.
+'''
