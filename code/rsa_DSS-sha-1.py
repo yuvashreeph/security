@@ -104,3 +104,24 @@ try:
     print("Modified Message: Signature VALID")
 except ValueError:
     print("Modified Message: Signature INVALID")
+
+'''
+### Algorithm: RSA and DSS Digital Signature using SHA-1
+1. Start the program.
+2. Import the required modules for RSA, DSA, SHA-1 hashing, and digital signatures.
+3. Define functions to check prime numbers and validate RSA parameters.
+4. Initialize the RSA values \\(p\\), \\(q\\), \\(e\\), and message \\(M\\).
+5. Calculate \\(n = p \times q\\) and \\(\phi(n) = (p-1)(q-1)\\).
+6. Find the private exponent \\(d\\) such that \\((e \times d) \bmod \phi(n) = 1\\).
+7. Encrypt the message using the RSA public key and decrypt it using the private key.
+8. Calculate the SHA-1 hash of the decrypted message and sign the hash using the RSA private key.
+9. Verify the RSA signature using the public key and display whether it is valid.
+10. Generate a DSA key pair and read a message from the user.
+11. Calculate the SHA-1 hash of the message and sign it using the DSA private key.
+12. Verify the DSA signature using the public key and display the result.
+13. Read a modified message and verify its signature to check whether the message has been changed.
+14. Display whether the modified message's signature is valid or invalid.
+15. Stop the program.
+
+Note: This program demonstrates RSA and DSA signatures for educational purposes. SHA-1 and the small RSA key used in the example are not suitable for modern security applications.
+'''
