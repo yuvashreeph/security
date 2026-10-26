@@ -28,3 +28,16 @@ if old_hash == new_hash:
     print("Decrypted Message:", decrypted.decode())
 else:
     print("Tampering Detected! Decryption Stopped.")
+
+
+
+
+key = input("Enter DES key: ").encode()
+
+if len(key) < 8:
+    key = key.ljust(8, b'0')  # Pad with ASCII '0'
+elif len(key) > 8:
+    key = key[:8]             # Keep only first 8 bytes
+
+print("Final key:", key)
+print("Key length:", len(key), "bytes")
