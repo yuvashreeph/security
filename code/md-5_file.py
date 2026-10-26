@@ -82,3 +82,27 @@ if os.path.isfile(path):
         print("File is MODIFIED")
 else:
     print("File not found")
+
+'''
+
+### Algorithm: MD5 Hashing and File Integrity Verification
+
+1. Start the program.
+2. Import the `hashlib`, `os`, and `json` modules.
+3. Read the text from the user and calculate its MD5 hash.
+4. Display the MD5 hash and its length.
+5. Read the previous MD5 hash and compare it with the newly calculated hash to check message integrity.
+6. Read two similar strings, calculate their MD5 hashes, and display both hashes.
+7. Convert the hashes into binary and count the number of bits that differ to demonstrate the avalanche effect.
+8. Read a file path and check whether the file exists.
+9. If the file exists, calculate and display its MD5 checksum; otherwise, display an error message.
+10. Calculate and display the MD5, SHA-1, and SHA-256 hashes of the input text.
+11. Load the saved file checksums from `checksums.json`, if available.
+12. Calculate the current MD5 checksum of the selected file.
+13. If the file is new, save its checksum; otherwise, compare it with the saved checksum to identify whether the file is unchanged or modified.
+14. Display the appropriate result.
+15. Stop the program.
+
+Note: MD5 is suitable for this educational experiment, but SHA-256 is recommended for security-sensitive integrity verification.
+
+'''
