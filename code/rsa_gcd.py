@@ -39,3 +39,23 @@ print("Encrypted message:", ciphertext)
 # Decryption
 decrypted = pow(ciphertext, d, n)
 print("Decrypted message:", decrypted)
+
+
+'''
+## Algorithm: RSA Encryption and Decryption
+
+1. Start the program.
+2. Define a function to calculate the GCD of two numbers.
+3. Define a function to find the modular inverse of `e` with respect to \\(\phi\\).
+4. Read two prime numbers, `p` and `q`, from the user.
+5. Calculate \\(n = p \times q\\).
+6. Calculate \\(\phi(n) = (p-1)(q-1)\\).
+7. Find a public exponent `e` such that \\(\gcd(e,\phi(n)) = 1\\).
+8. Calculate the private exponent `d` such that \\((d \times e) \bmod \phi(n) = 1\\).
+9. Display the public key \\((e,n)\\) and private key \\((d,n)\\).
+10. Read the message as an integer and check that it is smaller than `n`.
+11. Encrypt the message using \\(C = M^e \bmod n\\).
+12. Decrypt the ciphertext using \\(M = C^d \bmod n\\).
+13. Display the encrypted and decrypted messages.
+14. Stop the program.
+'''
