@@ -66,3 +66,23 @@ cipher = encrypt(text, key)
 
 print("Encrypted text:", cipher)
 print("Decrypted text:", decrypt(cipher, key))
+
+
+'''
+### Algorithm: Hill Cipher (3 × 3 Matrix)
+
+1. Start the program.
+2. Import the NumPy library.
+3. Define the encryption and decryption functions.
+4. Read the plaintext and convert it to uppercase, removing spaces.
+5. If the plaintext length is not divisible by 3, add `X` until it is divisible by 3.
+6. Divide the plaintext into blocks of three letters.
+7. Convert each letter into a number from 0 to 25.
+8. Multiply each block by the key matrix modulo 26 to generate the ciphertext.
+9. Display the encrypted text.
+10. Calculate the determinant of the key matrix and find its modular inverse.
+11. Calculate the inverse key matrix modulo 26. If the key is invalid, display an error message.
+12. Divide the ciphertext into blocks of three letters and multiply each block by the inverse key matrix modulo 26.
+13. Convert the resulting numbers back into letters and display the decrypted text.
+14. Stop the program.
+'''
