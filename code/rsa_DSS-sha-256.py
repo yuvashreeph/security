@@ -108,3 +108,26 @@ try:
     print("Modified Message: Signature VALID")
 except ValueError:
     print("Modified Message: Signature INVALID")
+
+'''
+### Algorithm: RSA and DSS Digital Signature using SHA-256
+
+1. Start the program.
+2. Import the required modules for RSA, DSA, SHA-256 hashing, and digital signatures.
+3. Define functions to check prime numbers and validate RSA parameters.
+4. Initialize the RSA values \\(p\\), \\(q\\), \\(e\\), and message \\(M\\).
+5. Calculate \\(n = p \times q\\) and \\(\phi(n) = (p-1)(q-1)\\).
+6. Calculate the private exponent \\(d\\) such that \\((e \times d) \bmod \phi(n) = 1\\).
+7. Encrypt the message using the RSA public key and decrypt it using the private key.
+8. Calculate the SHA-256 hash of the decrypted message and convert it into a number.
+9. Generate an RSA digital signature using the private key and verify it using the public key.
+10. Generate a DSA key pair and read a message from the user.
+11. Calculate the SHA-256 hash of the message and sign it using the DSA private key.
+12. Verify the DSA signature using the public key and display whether it is valid.
+13. Read a modified message and verify its signature to detect message changes.
+14. Display the verification result for the modified message.
+15. Stop the program.
+
+Note: The RSA signature portion is a simplified educational demonstration and is not secure for real-world use.
+
+'''
