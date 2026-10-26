@@ -39,3 +39,22 @@ for r in range(rows):
         plain += matrix2[r][c]
 
 print("Decrypted:", plain.rstrip('X'))
+
+
+'''
+### Algorithm: Transposition Cipher Encryption and Decryption
+
+1. Start the program.
+2. Read the plaintext and number of columns from the user.
+3. Convert the plaintext to uppercase and remove spaces.
+4. Calculate the number of rows required to store the plaintext.
+5. Create a matrix with the specified number of rows and columns, filling empty positions with `X`.
+6. Fill the matrix row by row using the plaintext.
+7. Read the matrix column by column to generate the ciphertext.
+8. Display the encrypted ciphertext.
+9. Create an empty matrix for decryption.
+10. Fill the matrix column by column using the ciphertext.
+11. Read the matrix row by row to recover the plaintext.
+12. Remove trailing `X` characters and display the decrypted text.
+13. Stop the program.
+'''
