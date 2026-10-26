@@ -92,3 +92,35 @@ else:
 
 print("\nCiphertext:", encrypted.hex())
 print("Decrypted text:", decrypted.decode())
+
+
+'''
+
+## Algorithm: DES and Triple DES Encryption and Decryption
+
+1. Start the program.
+2. Import the DES and Triple DES modules, padding functions, and random byte generator.
+3. Read the plaintext from the user.
+4. Display the available encryption modes: DES-ECB, DES-CBC, DES-CFB, DES-OFB, DES-CTR, and Triple DES-CBC.
+5. Read the user's choice.
+6. If the choice is between 1 and 5:
+   - Read the DES key from the user.
+   - Check whether the key is exactly 8 bytes long.
+   - Generate a random IV or nonce for the selected mode, if required.
+   - Create the DES cipher using the selected mode.
+   - Apply padding for ECB and CBC modes.
+   - Encrypt the plaintext.
+   - Decrypt the ciphertext using the same key, mode, and IV or nonce.
+   - Remove padding where required.
+7. If the choice is 6:
+   - Generate a random Triple DES key and adjust its parity.
+   - Generate a random IV.
+   - Create the Triple DES cipher using CBC mode.
+   - Pad and encrypt the plaintext.
+   - Decrypt the ciphertext and remove the padding.
+8. If the choice is invalid, display an error message and stop.
+9. Display the ciphertext in hexadecimal format.
+10. Display the decrypted plaintext.
+11. Stop the program.
+
+'''
