@@ -90,5 +90,29 @@ if check_rsa(p, q, e):
     else:
         print("MD5 Verification: Message is modified")
 
+
+'''
+## Algorithm: RSA Digital Signature and MD5 Message Integrity Verification
+
+1. Start the program.
+2. Import the required modules for mathematical operations and MD5 hashing.
+3. Define a function to check whether a number is prime.
+4. Define a function to validate the RSA parameters \\(p\\), \\(q\\), and \\(e\\).
+5. Initialize the values \\(p=61\\), \\(q=53\\), \\(e=17\\), and message \\(M=88\\).
+6. Check whether the RSA parameters are valid.
+7. Calculate \\(n=p\times q\\) and \\(\phi(n)=(p-1)(q-1)\\).
+8. Find the private key exponent \\(d\\) such that \\((e\times d)\bmod\phi(n)=1\\).
+9. Display the public and private keys.
+10. Encrypt the message using \\(C=M^e\bmod n\\) and decrypt it using \\(M=C^d\bmod n\\).
+11. Calculate the MD5 hash of the recovered message and convert the hash into a number.
+12. Generate a digital signature by encrypting the hash number with the RSA private key.
+13. Verify the signature using the RSA public key and display whether it is valid.
+14. Read an original message and calculate its MD5 hash.
+15. Read the message to be verified and calculate its MD5 hash.
+16. Compare both hashes and display whether the message is unchanged or modified.
+17. If the RSA parameters are invalid, display an error message.
+18. Stop the program.
+'''
+
 else:
     print("Invalid RSA parameters")
